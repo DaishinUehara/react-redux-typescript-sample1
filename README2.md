@@ -50,13 +50,13 @@ export const Sample1Actions = {
 };
 ```
 
-## 発生したイベントをReducerで処理する
+## 発生したイベントをReducerで処理しStateに格納する
 
 ```bash
 touch Sample1State.ts
 ```
 
-ここではStateの中で、初期状態とstateを処理するReducerも記述しています。
+ここでは初期状態のstateとイベントからStateを処理するReducerを記述しています。
 
 ```javascript
 import { reducerWithInitialState } from 'typescript-fsa-reducers';
@@ -84,6 +84,8 @@ export const Sample1Reducer = reducerWithInitialState(initialState)
     return Object.assign({}, state, { inputtext });
   });
 ```
+
+イベントが発生し処理がおこなわれるのが分かりやすいようにcosole.logを入れています。
 
 ## storeの作成
 
