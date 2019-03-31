@@ -14,6 +14,7 @@
 1. $ cd react-redux-typescript-sample1
 1. $ yarn add redux react-redux
 1. $ yarn add --dev @types/react-redux
+1. $ yarn add typescript-fsa typescript-fsa-reducers
 
 ### 最初の動作確認
 
